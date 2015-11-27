@@ -6,6 +6,9 @@ function HideWatched(){
 	   next.find('.yt-lockup-description').remove();
 	   $(this).remove();
 	});
+
+	$('#logo-container').attr('href', '/feed/subscriptions')
+
 }
 
 setInterval(HideWatched, 1000);
